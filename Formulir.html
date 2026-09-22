@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Registrasi Pengguna</title>
+</head>
+<body>
+    <form action="proses_pendaftaran.php" method="post">
+        <fieldset>
+            <legend>Formulir Registrasi</legend>
+            <p>
+                <label for="nama">Nama Lengkap:</label><br />
+                       <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" >
+            </p>
+            <p>
+                <label for="password">Kata Sandi:</label><br />
+                       <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" >
+            </p>
+            <p>
+                <label>Jenis Kelamin:</label><br />
+                       <input type="radio" id="laki-laki" name="jenis_kelamin" value="L" />
+                <label for="laki-laki">Laki-laki</label>
+                       <input type="radio" id="perempuan" name="jenis_kelamin" value="P" />
+                <label for="perempuan">Perempuan</label>
+            </p>
+            <p>
+                <label for="Agama">Agama:</label><br />
+                <select id="Agama" name="Agama">
+                <option value="">Pilih Agama</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" id="setuju" name="Persetujuan" value="1" />
+                <label for="setuju">Saya setuju dengan syarat dan ketentuan yang berlaku</label>
+            </p>
+            <p>
+             <label for="biografi">Biografi Singkat:</label><br />
+             <textarea id="biografi" name="Biografi" rows="4" cols="50"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Daftar" />
+            </fieldset>
+    </form>
+</body>
+</html>
